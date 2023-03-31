@@ -13,6 +13,7 @@ pipeline {
         stage('Stage Nmae -2') {
           steps {
             sh "echo Printing the envt varibale $ENV_URL"
+            sh "env"
           }   
         }
         stage('Stage Nmae -3') {
