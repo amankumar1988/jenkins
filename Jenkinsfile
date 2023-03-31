@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment{
         ENV_URL = "pipeline.learning.com"
+        SSH_CREDENTIALS = credentials('SSH_CRED')
     }
     stages{
         stage('Stage Name -1') {
