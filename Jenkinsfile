@@ -16,6 +16,9 @@ pipeline {
         }
         stage('Stage Nmae -3'){
           steps {
+                environment{
+                      ENV_URL = "stage.learning.com"
+                  }
             sh "echo This is 3rd Stage"
           }   
         }
