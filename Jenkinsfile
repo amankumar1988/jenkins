@@ -19,8 +19,8 @@ pipeline {
                 environment{
                       ENV_URL = "stage.learning.com"
                   }
-            sh "echo This is 3rd Stage"
-            sh "echo this is stage env variable $ENV_URL"
+            sh '''echo This is 3rd Stage"
+            echo this is stage env variable $ENV_URL'''
           }   
         }
     }
