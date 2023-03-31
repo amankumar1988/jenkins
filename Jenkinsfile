@@ -4,6 +4,7 @@ pipeline {
         ENV_URL = "pipeline.learning.com"
         SSH_CREDENTIALS = credentials('SSH_CRED')
     }
+    triggers { cron('*/1 * * * *') }
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
 
