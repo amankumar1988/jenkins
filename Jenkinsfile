@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+        ENV_URL = "pipeline.learning.com"
+    }
     stages{
         stage('Stage Name -1'){
           steps {
@@ -8,7 +11,7 @@ pipeline {
         }
         stage('Stage Nmae -2'){
           steps {
-            sh "echo This is 2nd Stage"
+            sh "echo Printing the envt varibale $ENV_URL"
           }   
         }
         stage('Stage Nmae -3'){
