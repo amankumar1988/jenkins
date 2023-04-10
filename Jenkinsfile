@@ -46,4 +46,8 @@ node {
     stage('Test'){
       print 'Welcome to the scripted pipeline'
     }
+
+    stage('QA'){
+      print 'Scripted pipeline to make things easy'
+    }
 }
