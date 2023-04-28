@@ -51,3 +51,5 @@ node {
       print 'Scripted pipeline to make things easy'
     }
 }
+
+
