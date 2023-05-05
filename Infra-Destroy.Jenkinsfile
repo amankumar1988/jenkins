@@ -11,7 +11,7 @@ pipeline {
         stage('Destroy Cart') {
             steps {
                         git branch: 'main', url: 'https://github.com/amankumar1988/cart.git'
-                        sh "cd terraform-mutable"
+                        sh "cd mutable-infra"
                         sh "export TF_VAR_APP_VERSION=NA"
                         sh "terrafile -f env-${ENV}/Terrafile"
                         sh "terraform init --backend-config=env-${ENV}/${ENV}-backend.tfvars -reconfigure"
